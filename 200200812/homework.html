@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" id="naver" value="naver" />
+    <input type="button" id="daum" value="daum" />
+    <input type="button" id="duksung" value="duksung" />
+    <script>
+        let naver = document.getElementById('naver');
+        let daum = document.getElementById('daum');
+        let duksung = document.getElementById('duksung');
+        
+        // Event
+        /*
+        let t =document.getElementById('target');
+
+        t.onClick = function(){
+            alert('Hello');
+        }
+        */
+        let t = document.getElementById('target');
+        t.addEventListener('click',function(event){
+            alert('Hello, '+event.target.value);
+        })
+
+    </script>
+</body>
+</html>
