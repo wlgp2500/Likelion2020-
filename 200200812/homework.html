@@ -15,19 +15,15 @@
         let daum = document.getElementById('daum');
         let duksung = document.getElementById('duksung');
         
-        // Event
-        /*
-        let t =document.getElementById('target');
-
-        t.onClick = function(){
-            alert('Hello');
-        }
-        */
-        let t = document.getElementById('target');
-        t.addEventListener('click',function(event){
-            alert('Hello, '+event.target.value);
-        })
-
+        naver.addEventListener('click',function(event){
+            window.open('https://www.naver.com/')
+        });
+        daum.addEventListener('click',function(event){
+            window.open('https://www.daum.net/')
+        });
+        duksung.addEventListener('click',function(event){
+            window.open('http://www.duksung.ac.kr/')
+        });
     </script>
 </body>
 </html>
